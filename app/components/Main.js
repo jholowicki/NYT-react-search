@@ -1,18 +1,22 @@
 //  * **Main** - contains the main-container div that holds the main layout and navigation. This component should also be able to hold sub-components Search and Saved
 
 // Include React
-import { React } from 'react'
-import { search } from './children/search'
-import { saved } from './children/saved'
+import { Component } from 'react'
+import { Search } from './children/search'
+import { Saved } from './children/saved'
 
-export const Main= React.createClass( {
-  dateFormatted(datestr) {
-    arr= datestr.split();
-    year = arr[0]+ arr[1] + arr[2]+ arr[3];
-    month = arr[4]+ arr[5];
-    day = arr[6]+arr[7];
-    return year + "-" + month + "-" + day
-  },
+
+export class Main extends Component {
+  state = {
+    articles: []
+  };
+  componentDidMount() {
+    this.setState({
+      articles:
+    });
+  componentWillUnmount() {
+
+  }
   // Here we render the function
   render() {
     return (
@@ -35,4 +39,4 @@ export const Main= React.createClass( {
           </div>    
       </div>
 
-        }))
+        })

@@ -14,5 +14,4 @@ render(
         </Route>
         <Route path="search" component={Main}/>
         <Route path="*" component={Whoops404}/>
-    </Router>
-    , document.getElementById("app"));
+    </Router>, document.getElementById("app"));
