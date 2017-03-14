@@ -32,7 +32,7 @@ mongoose.connect('');
 var db = mongoose.connection;
 
 // Show any mongoose errors
-db.on('error', fun  ction(error) {
+db.on('error', function(error) {
   console.log('Mongoose Error:', error);
 });
 
